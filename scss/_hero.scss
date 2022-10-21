@@ -1,0 +1,160 @@
+main {
+    max-width: 700px;
+    margin: 0 auto;
+}
+section {
+    padding: .4rem;
+}
+.personal {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    align-content: center;
+    .profile-pic {
+        width: 100%;
+        img {
+            width: 300px;
+            border-radius: 50%;
+            height: 300px;
+            object-fit: cover;
+        }
+    }
+    
+    .info {
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            font-family: "Secular One";
+        }
+        p {
+            max-width: 31rem;
+        }
+      .hand{
+            font-size: 2rem;
+        }
+    }
+}
+
+.bio {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap:1.5rem;
+    li a {
+        color: darkorange;
+        transition:0.3s;
+    }
+    li a:hover {
+        color: rgb(150, 86, 7);
+    }
+}
+
+.skills {
+    h2 {
+        font-family: "Secular One";
+        font-size: 2rem;
+    }
+    li {
+        list-style:none;
+        line-height: 1.5rem;
+    }
+    .check {
+        font-size: 1.3rem;
+        color: darkorange;
+    }
+}
+
+.tech {
+    h3 {
+        font-size: 2rem;
+        font-family: "Secular One";
+    }
+    .my-stack {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        font-size: 1rem;
+        .stack {
+            border: .5px solid #2b3031;
+            border-radius: 5px;
+            padding: 8px 12px;
+        }
+    }
+}
+.info {
+    h4 {
+        font-size: 1.5rem;
+        font-family: "Secular One";
+        
+    }
+    p {
+        line-height: 2rem;
+    }
+}
+
+.projects {
+    .big-text {
+        font-size: 2rem;
+        font-family: "Secular One";
+    }
+    .project-card {
+        border-top: .5px solid #2b3031;
+       span {
+        font-size: 1.2rem;
+       }
+
+        button {
+            color:#2b3031;
+            border: none;
+            background-color: #FFF;
+            font-size: 1.1rem;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            li {
+                list-style: square;
+                a {
+                    color: darkorange;
+                    cursor: pointer;
+                    font-size: 1rem;
+
+                    &:hover {
+                        color:rgb(150, 86, 7);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.attachments {
+    h4 {
+        font-size: 2rem;
+        font-family: "Secular One";
+        margin: 0;
+    }
+    a {
+        color: darkorange;
+         cursor: pointer;
+         &:hover {
+            color:rgb(150, 86, 7);
+        }
+    }
+    span {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width:486px) {
+    .personal {
+        flex-direction: column;
+        .profile-pic {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
