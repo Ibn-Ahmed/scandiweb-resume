@@ -10,8 +10,9 @@ section {
     justify-content: space-between;
     padding-top: 1rem;
     align-content: center;
+    gap: 2rem;
     .profile-pic {
-        width: 100%;
+        width: 60%;
         img {
             width: 300px;
             border-radius: 50%;

@@ -28,9 +28,10 @@ section {
   justify-content: space-between;
   padding-top: 1rem;
   align-content: center;
+  gap: 2rem;
 }
 .personal .profile-pic {
-  width: 100%;
+  width: 60%;
 }
 .personal .profile-pic img {
   width: 300px;
